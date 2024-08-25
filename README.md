@@ -11,6 +11,7 @@
 ### For backend:
 #### npm install
 #### npx nodemon
+#### (Please put the environment variables in .env file)
 
 ## Live link : https://66cb08b485fd07ef577bfc6f--dashing-centaur-f4dfe4.netlify.app/
 ## Hope, you like it!!
