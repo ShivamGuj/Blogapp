@@ -25,7 +25,7 @@ const CreateBlog = () => {
 
       try {
         const response = await axios.post(
-          "http://localhost:5000/blogs/create-blog",
+          "https://blogapp-9ngc.onrender.com/blogs/create-blog",
           {
             title,
             content,

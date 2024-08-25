@@ -28,7 +28,7 @@ const BlogShow = ({ blog }) => {
 
       try {
         const response = await axios.put(
-          `http://localhost:5000/blogs/update/${blog.id}`,
+          `https://blogapp-9ngc.onrender.com/blogs/update/${blog.id}`,
           { title, content },
           { headers: { Authorization: `Bearer ${token}` } }
         );
@@ -53,7 +53,7 @@ const BlogShow = ({ blog }) => {
     setLoading(true);
 
     try {
-      await axios.delete(`http://localhost:5000/blogs/delete/${blog.id}`, {
+      await axios.delete(`https://blogapp-9ngc.onrender.com/blogs/delete/${blog.id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       navigate("/");
@@ -77,7 +77,7 @@ const BlogShow = ({ blog }) => {
 
     try {
       const response = await axios.post(
-        `http://localhost:5000/blogs/add-comment`,
+        `https://blogapp-9ngc.onrender.com/blogs/add-comment`,
         { comment, blogId: blog.id, userId, username },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -96,7 +96,7 @@ const BlogShow = ({ blog }) => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `http://localhost:5000/blogs/get-comments/${blog.id}`
+          `https://blogapp-9ngc.onrender.com/blogs/get-comments/${blog.id}`
         );
         setComments(response.data);
       } catch (error) {

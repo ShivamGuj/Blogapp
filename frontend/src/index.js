@@ -5,9 +5,9 @@ import store from './redux/index'; // Ensure the correct path to your store file
 import App from './App';
 import './index.css';
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <Provider store={store}>
     <App />
-  </Provider>,
-  document.getElementById('root')
+  </Provider>
 );

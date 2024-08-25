@@ -36,7 +36,7 @@ const MyBlogs = () => {
     const fetchMyBlogs = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/blogs/getblog/${id}`
+          `https://blogapp-9ngc.onrender.com/blogs/getblog/${id}`
         );
         if (Array.isArray(response.data)) {
           setMyBlogs(response.data);
