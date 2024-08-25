@@ -1,7 +1,7 @@
 # Blog App 
 ### Blog App where you can create blogs, and everyone can see it with many features!!
 
-## Made with React.js, Redux, Tailwind CSS, Node.js, Express.js, PostgreSQL.
+#### Made with React.js, Redux, Tailwind CSS, Node.js, Express.js, PostgreSQL.
 
 ## To run it into your local machine,
 ### Clone the repository : git clone git@github.com:ShivamGuj/Blogapp.git
