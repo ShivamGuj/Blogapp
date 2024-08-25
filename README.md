@@ -8,7 +8,7 @@
 ### For frontend:
 #### npm install (install dependencies)
 #### npm start
-### For backend
+### For backend:
 #### npm install
 #### npx nodemon
 
